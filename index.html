@@ -9,9 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- ------remix-icon cdn link------ -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!-- -------google-font------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,9 +21,8 @@
             extend: {
                 colors: {
                 'color-primary': '#abef5f',
-                'color-background': '#f4f4f4'
+                'section-color': '#f4f4f4'
                 },
-
 
                 fontFamily: {
                 manrope:["Manrope"]
@@ -39,7 +35,84 @@
 </head>
 <body class="font-manrope">
     
-    <h1>Mamudul Hasan Rifat</h1>
+    <!-- ----header start---- -->
+    <header class="">
+
+            <nav class=" flex justify-between items-center max-w-[90%] sm:max-w-[95%] lg:max-w-[1150px] mx-auto py-3">
+
+                <div class="navbar-start">
+                  
+                    <div class="flex gap-2 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-color-primary rounded-full font-bold">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+
+                        <a href="#home" class=" text-3xl font-[900]">Rinterio</a>
+
+                    </div>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                  </ul>
+                </div>
+
+                <div class="navbar-end gap-5 hidden sm:flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    
+                    <a class="btn font-bold bg-color-primary rounded-3xl hover:bg-[#acef5fd3]">
+                        Book Consult
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 bg-black text-white rounded-full font-bold">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                        
+                    </a>
+                </div>
+
+                <div class="dropdown">
+                        <div tabindex="0" role="button" class="lg:hidden sm:ml-5 lg:ml-0">
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-2 backdrop-blur-lg bg-[#80808049]">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#blogs">Blogs</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                </div>
+
+            </nav>
+
+    </header>
+    <!-- ----header end---- -->
+
 
 </body>
 </html>
